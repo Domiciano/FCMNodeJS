@@ -9,7 +9,7 @@ app.use(bodyparser.json())
 
 const PORT = 3000;
 const PROJECT_NAME = 'facelogprueba';
-const KEY_FILE_NAME = 'fcmkey2.json';
+const KEY_FILE_NAME = 'fcmkey.json';
 
 app.post('/fcm/send', async (req, res) => {
     let response = await sendPushNotification(req.body);
